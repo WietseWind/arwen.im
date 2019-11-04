@@ -1,4 +1,4 @@
-# arwen.im
+# arwen.im [![Netlify Status](https://api.netlify.com/api/v1/badges/4e605b01-dee4-4444-aa46-f6b2db4153ad/deploy-status)](https://app.netlify.com/sites/arwen/deploys)
 
 ## Project setup
 ```
