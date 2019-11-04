@@ -1,6 +1,6 @@
 <template>
   <div class="hello">
-    <h1>Arwèn Wind</h1>
+    <h1 class="mt-4">Arwèn Wind</h1>
     <h4>Hello world 👋</h4>
     <img src="../assets/arwen.jpg" alt="Arwèn Wind" class="img-thumbnail rounded arwen">
   </div>
@@ -8,7 +8,7 @@
 
 <script>
 export default {
-  name: 'HelloWorld'
+  name: 'Home'
 }
 </script>
 
