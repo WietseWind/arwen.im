@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Arwèn's website</title>
+<meta name="description" content="De website van Arwèn. Speel Tafels leren met de axolotl en oefen de tafels van 1 tot en met 10 met een schattige axolotl.">
+<meta name="theme-color" content="#FFFBF4">
+<meta name="color-scheme" content="light">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Arwèn's website">
+<meta property="og:locale" content="nl_NL">
+<meta property="og:url" content="https://arwen.im/">
+<meta property="og:title" content="Arwèn's website">
+<meta property="og:description" content="Zwem met de axolotl door haar meer en leer de tafels van 1 tot en met 10. Bij elk goed antwoord komt er een vriendje bij!">
+<meta property="og:image" content="https://arwen.im/img/axolotl-game.png">
+<meta property="og:image:width" content="1600">
+<meta property="og:image:height" content="1000">
+<meta property="og:image:alt" content="Een roze axolotl zwemt tussen bubbels met getallen in een blauw meer.">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Arwèn's website">
+<meta name="twitter:description" content="Zwem met de axolotl door haar meer en leer de tafels van 1 tot en met 10. Bij elk goed antwoord komt er een vriendje bij!">
+<meta name="twitter:image" content="https://arwen.im/img/axolotl-game.png">
+<meta name="twitter:image:alt" content="Een roze axolotl zwemt tussen bubbels met getallen in een blauw meer.">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2064%2064'%3E%3Crect%20width='64'%20height='64'%20rx='16'%20fill='%23E7F6FC'/%3E%3Cg%20stroke='%23E8608F'%20stroke-width='5'%20stroke-linecap='round'%3E%3Cpath%20d='M17%2029%20L8%2022'/%3E%3Cpath%20d='M16%2037%20L7%2036'/%3E%3Cpath%20d='M47%2029%20L56%2022'/%3E%3Cpath%20d='M48%2037%20L57%2036'/%3E%3C/g%3E%3Ccircle%20cx='8'%20cy='22'%20r='4.5'%20fill='%23E8608F'/%3E%3Ccircle%20cx='7'%20cy='36'%20r='4.5'%20fill='%23E8608F'/%3E%3Ccircle%20cx='56'%20cy='22'%20r='4.5'%20fill='%23E8608F'/%3E%3Ccircle%20cx='57'%20cy='36'%20r='4.5'%20fill='%23E8608F'/%3E%3Cellipse%20cx='32'%20cy='36'%20rx='21'%20ry='18'%20fill='%23FFB3CE'/%3E%3Cellipse%20cx='24'%20cy='34'%20rx='4'%20ry='5'%20fill='%232E2740'/%3E%3Cellipse%20cx='40'%20cy='34'%20rx='4'%20ry='5'%20fill='%232E2740'/%3E%3Ccircle%20cx='22.6'%20cy='32'%20r='1.6'%20fill='%23fff'/%3E%3Ccircle%20cx='38.6'%20cy='32'%20r='1.6'%20fill='%23fff'/%3E%3Cpath%20d='M28%2044%20q4%204%208%200'%20fill='none'%20stroke='%232E2740'%20stroke-width='2.6'%20stroke-linecap='round'/%3E%3Cellipse%20cx='17'%20cy='43'%20rx='4.5'%20ry='2.8'%20fill='%23FF8FBE'/%3E%3Cellipse%20cx='47'%20cy='43'%20rx='4.5'%20ry='2.8'%20fill='%23FF8FBE'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+</head>
+<body>
+<!--
+  ARWEN.IM — de website van Arwèn. Een statische pagina.
+  Geen build, geen frameworks, geen externe requests: alleen index.html,
+  style.css, script.js en de screenshots in img/. Dubbelklik index.html
+  en alles werkt, ook zonder internet.
+
+  LET OP: de naam is altijd Arwèn, met accent grave op de e.
+-->
+
+<a class="overslaan" href="#spelletjes">Ga naar de spelletjes</a>
+
+<!-- Het sterretje komt vaak terug, dus dat staat één keer hier. -->
+<svg width="0" height="0" aria-hidden="true" focusable="false" style="position:absolute">
+  <symbol id="ster" viewBox="0 0 24 24">
+    <path d="M12,1 Q13.6,10.4 23,12 Q13.6,13.6 12,23 Q10.4,13.6 1,12 Q10.4,10.4 12,1 Z" fill="currentColor"/>
+  </symbol>
+</svg>
+
+<!-- ============================ WOORDMERK ============================ -->
+<header class="merk">
+  <div class="container merk__in">
+    <svg class="merk__duo" viewBox="0 0 68 40" width="52" height="31" aria-hidden="true" focusable="false">
+      <!-- uilenkopje -->
+      <path d="M13 10q-2-6 3-5t3 5Z" fill="var(--lavendel)" stroke="var(--lavendel-diep)" stroke-width="2" stroke-linejoin="round"/>
+      <path d="M31 10q2-6-3-5t-3 5Z" fill="var(--lavendel)" stroke="var(--lavendel-diep)" stroke-width="2" stroke-linejoin="round"/>
+      <circle cx="22" cy="21" r="15" fill="var(--lavendel)" stroke="var(--lavendel-diep)" stroke-width="2"/>
+      <circle cx="16" cy="19" r="6" fill="#FFF6E8"/>
+      <circle cx="28" cy="19" r="6" fill="#FFF6E8"/>
+      <circle cx="16" cy="19" r="2.6" fill="var(--inkt-diep)"/>
+      <circle cx="28" cy="19" r="2.6" fill="var(--inkt-diep)"/>
+      <path d="M22 24l-2.6 3h5.2Z" fill="var(--oker)"/>
+      <!-- axolotlkopje -->
+      <g stroke="var(--roze-diep)" stroke-width="2" stroke-linecap="round">
+        <path d="M50 14l-4-4M50 26l-4 4"/>
+      </g>
+      <circle cx="45.4" cy="9.6" r="2.4" fill="var(--roze-diep)"/>
+      <circle cx="45.4" cy="30.4" r="2.4" fill="var(--roze-diep)"/>
+      <ellipse cx="52" cy="21" rx="15" ry="13" fill="var(--roze)" stroke="var(--roze-diep)" stroke-width="2"/>
+      <circle cx="47" cy="19" r="2.6" fill="var(--inkt-diep)"/>
+      <circle cx="57" cy="19" r="2.6" fill="var(--inkt-diep)"/>
+      <path d="M49 26q3 3 6 0" fill="none" stroke="var(--inkt-diep)" stroke-width="1.8" stroke-linecap="round"/>
+      <ellipse cx="44" cy="25" rx="2.6" ry="1.8" fill="var(--blos)" opacity=".55"/>
+      <ellipse cx="60" cy="25" rx="2.6" ry="1.8" fill="var(--blos)" opacity=".55"/>
+    </svg>
+    <span class="merk__naam">arwen.im</span>
+  </div>
+</header>
+
+<main>
+<!-- ============================== HET MEER ============================== -->
+<section class="hero">
+
+  <!-- Decoratie. Puur versiering, dus onzichtbaar voor een schermlezer. -->
+  <div class="versiering" aria-hidden="true">
+    <!-- de maan, met een slaperig gezichtje -->
+    <svg class="maan" viewBox="0 0 72 72" focusable="false">
+      <path d="M42,6 A28,28 0 1 0 64,46 A21,21 0 1 1 42,6 Z" fill="var(--vanille)"/>
+      <path d="M15,32 q5,6 10,0M31,29 q5,6 10,0" fill="none" stroke="var(--inkt-diep)" stroke-width="2.6" stroke-linecap="round"/>
+      <path d="M26,44 q3,4 6,0 q3,4 6,0" fill="none" stroke="var(--inkt-diep)" stroke-width="2.4" stroke-linecap="round"/>
+      <ellipse cx="18" cy="42" rx="6" ry="4" fill="var(--blos)" opacity=".5"/>
+    </svg>
+
+    <!-- vijf sterretjes -->
+    <svg class="ster ster--1" viewBox="0 0 24 24" style="color:var(--goud);   --d:0s"   focusable="false"><use href="#ster"/></svg>
+    <svg class="ster ster--2" viewBox="0 0 24 24" style="color:var(--vanille);--d:1.1s" focusable="false"><use href="#ster"/></svg>
+    <svg class="ster ster--3" viewBox="0 0 24 24" style="color:var(--goud);   --d:2.3s" focusable="false"><use href="#ster"/></svg>
+    <svg class="ster ster--4" viewBox="0 0 24 24" style="color:var(--vanille);--d:.6s"  focusable="false"><use href="#ster"/></svg>
+    <svg class="ster ster--5" viewBox="0 0 24 24" style="color:var(--goud);   --d:1.8s" focusable="false"><use href="#ster"/></svg>
+
+    <!-- zes bubbels die rustig omhoog drijven -->
+    <span class="bubbel" style="--x:8%;  --w:16px; --dur:9s;    --d:0s"></span>
+    <span class="bubbel" style="--x:22%; --w:24px; --dur:10.5s; --d:1.4s"></span>
+    <span class="bubbel" style="--x:38%; --w:12px; --dur:8s;    --d:2.9s"></span>
+    <span class="bubbel" style="--x:61%; --w:20px; --dur:11s;   --d:4.2s"></span>
+    <span class="bubbel" style="--x:78%; --w:14px; --dur:9.5s;  --d:5.6s"></span>
+    <span class="bubbel" style="--x:91%; --w:26px; --dur:10s;   --d:7.1s"></span>
+  </div>
+
+  <!-- De tekst in het midden -->
+  <div class="hero__tekst">
+    <p class="opschrift">Welkom op de website van</p>
+    <h1>Arwèn</h1>
+    <svg class="streep" viewBox="0 0 200 14" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+      <path d="M4,9 Q34,2 68,8 T132,8 T196,7" fill="none" stroke="var(--roze)" stroke-width="6" stroke-linecap="round"/>
+    </svg>
+    <p class="tagline">Hoi! Ik hou van uilen, van axolotls en van tekenen. Hier staan mijn spelletjes. Speel je mee?</p>
+    <a class="knop-hero" href="#spelletjes">
+      Naar mijn spelletjes
+      <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+        <path d="M12 5v14M6 13l6 6 6-6"/>
+      </svg>
+    </a>
+  </div>
+
+  <!-- De twee mascottes. Aantikken laat ze iets zeggen. -->
+  <div class="mascottes">
+
+    <span class="mascotte-plek mascotte-plek--bobbel">
+      <p class="wolkje" id="wolkje-bobbel" role="status"></p>
+      <button type="button" class="mascotte mascotte--bobbel" data-mascotte="bobbel" aria-label="Kietel Bobbel de axolotl">
+        <svg viewBox="0 0 220 170" aria-hidden="true" focusable="false">
+          <!-- Bobbel kijkt je recht aan, net als in het spel: een ronde kop met
+               drie kieuwpluimen aan elke kant. -->
+
+          <!-- de zes kieuwpluimen: haar handelsmerk, dus royaal groot -->
+          <g class="kieuwen" stroke-linecap="round">
+            <g class="kieuw" style="--k:0">
+              <path d="M60,58 L40,42" stroke="var(--roze-diep)" stroke-width="8" fill="none"/>
+              <circle cx="34" cy="36" r="11" fill="var(--roze-diep)"/>
+              <circle cx="22" cy="30" r="9" fill="var(--roze-diep)"/>
+              <circle cx="30" cy="22" r="8" fill="var(--roze-diep)"/>
+              <circle cx="44" cy="26" r="7" fill="var(--roze-diep)"/>
+              <circle cx="31" cy="32" r="3" fill="var(--roze-licht)" opacity=".8"/>
+            </g>
+            <g class="kieuw" style="--k:1">
+              <path d="M52,84 L30,82" stroke="var(--roze-diep)" stroke-width="8" fill="none"/>
+              <circle cx="26" cy="82" r="11" fill="var(--roze-diep)"/>
+              <circle cx="12" cy="78" r="9" fill="var(--roze-diep)"/>
+              <circle cx="16" cy="92" r="8" fill="var(--roze-diep)"/>
+              <circle cx="24" cy="68" r="7" fill="var(--roze-diep)"/>
+              <circle cx="23" cy="78" r="3" fill="var(--roze-licht)" opacity=".8"/>
+            </g>
+            <g class="kieuw" style="--k:2">
+              <path d="M60,110 L40,126" stroke="var(--roze-diep)" stroke-width="8" fill="none"/>
+              <circle cx="34" cy="130" r="11" fill="var(--roze-diep)"/>
+              <circle cx="22" cy="138" r="9" fill="var(--roze-diep)"/>
+              <circle cx="32" cy="146" r="8" fill="var(--roze-diep)"/>
+              <circle cx="46" cy="138" r="7" fill="var(--roze-diep)"/>
+              <circle cx="31" cy="126" r="3" fill="var(--roze-licht)" opacity=".8"/>
+            </g>
+            <g class="kieuw" style="--k:3">
+              <path d="M160,58 L180,42" stroke="var(--roze-diep)" stroke-width="8" fill="none"/>
+              <circle cx="186" cy="36" r="11" fill="var(--roze-diep)"/>
+              <circle cx="198" cy="30" r="9" fill="var(--roze-diep)"/>
+              <circle cx="190" cy="22" r="8" fill="var(--roze-diep)"/>
+              <circle cx="176" cy="26" r="7" fill="var(--roze-diep)"/>
+              <circle cx="183" cy="32" r="3" fill="var(--roze-licht)" opacity=".8"/>
+            </g>
+            <g class="kieuw" style="--k:4">
+              <path d="M168,84 L190,82" stroke="var(--roze-diep)" stroke-width="8" fill="none"/>
+              <circle cx="194" cy="82" r="11" fill="var(--roze-diep)"/>
+              <circle cx="208" cy="78" r="9" fill="var(--roze-diep)"/>
+              <circle cx="204" cy="92" r="8" fill="var(--roze-diep)"/>
+              <circle cx="196" cy="68" r="7" fill="var(--roze-diep)"/>
+              <circle cx="191" cy="78" r="3" fill="var(--roze-licht)" opacity=".8"/>
+            </g>
+            <g class="kieuw" style="--k:5">
+              <path d="M160,110 L180,126" stroke="var(--roze-diep)" stroke-width="8" fill="none"/>
+              <circle cx="186" cy="130" r="11" fill="var(--roze-diep)"/>
+              <circle cx="198" cy="138" r="9" fill="var(--roze-diep)"/>
+              <circle cx="188" cy="146" r="8" fill="var(--roze-diep)"/>
+              <circle cx="174" cy="138" r="7" fill="var(--roze-diep)"/>
+              <circle cx="183" cy="126" r="3" fill="var(--roze-licht)" opacity=".8"/>
+            </g>
+          </g>
+
+          <!-- vier pootjes onder het lijf -->
+          <g fill="var(--roze)" stroke="var(--roze-diep)" stroke-width="2.5" stroke-linejoin="round">
+            <ellipse cx="66" cy="122" rx="13" ry="9" transform="rotate(38 66 122)" opacity=".8"/>
+            <ellipse cx="154" cy="122" rx="13" ry="9" transform="rotate(-38 154 122)" opacity=".8"/>
+            <ellipse cx="86" cy="133" rx="14" ry="10" transform="rotate(22 86 133)"/>
+            <ellipse cx="134" cy="133" rx="14" ry="10" transform="rotate(-22 134 133)"/>
+          </g>
+
+          <!-- het lijf -->
+          <ellipse cx="110" cy="84" rx="58" ry="48" fill="var(--roze)" stroke="var(--roze-diep)" stroke-width="3"/>
+          <!-- lichtere buik -->
+          <ellipse cx="110" cy="102" rx="42" ry="26" fill="var(--roze-licht)" opacity=".6"/>
+
+          <!-- lelieblad-hoedje -->
+          <path d="M110,40 m-20,0 a20,11 0 1 0 40,0 l-15,0 l-5,-7 l-5,7 Z" fill="var(--mint)" stroke="var(--mint-diep)" stroke-width="2.5" stroke-linejoin="round"/>
+
+          <!-- gezicht -->
+          <ellipse class="oog" cx="88" cy="80" rx="9" ry="11" fill="var(--inkt-diep)"/>
+          <circle cx="85.2" cy="76.4" r="3.4" fill="#fff"/>
+          <circle cx="90.8" cy="83.4" r="1.5" fill="#fff"/>
+          <ellipse class="oog" cx="132" cy="80" rx="9" ry="11" fill="var(--inkt-diep)"/>
+          <circle cx="129.2" cy="76.4" r="3.4" fill="#fff"/>
+          <circle cx="134.8" cy="83.4" r="1.5" fill="#fff"/>
+          <path class="mond" d="M103,101 q3.5,5 7,0 q3.5,5 7,0" fill="none" stroke="var(--inkt-diep)" stroke-width="3" stroke-linecap="round"/>
+          <path class="mond mond--lach" d="M101,99 q9,12 18,0 q-9,6 -18,0 Z" fill="var(--inkt-diep)" opacity="0"/>
+          <ellipse cx="72" cy="98" rx="9" ry="5.5" fill="var(--blos)" opacity=".55"/>
+          <ellipse cx="148" cy="98" rx="9" ry="5.5" fill="var(--blos)" opacity=".55"/>
+
+          <!-- bubbeltjes die ze net geblazen heeft -->
+          <g fill="#fff" opacity=".55" stroke="var(--hemel)" stroke-width="1.5">
+            <circle cx="176" cy="22" r="5"/><circle cx="192" cy="8" r="7"/><circle cx="160" cy="10" r="4"/>
+          </g>
+        </svg>
+      </button>
+    </span>
+
+    <span class="mascotte-plek mascotte-plek--loela">
+      <p class="wolkje" id="wolkje-loela" role="status"></p>
+      <button type="button" class="mascotte mascotte--loela" data-mascotte="loela" aria-label="Zeg hallo tegen Loela de uil">
+        <svg viewBox="0 0 170 180" aria-hidden="true" focusable="false">
+          <!-- de tak waar ze op zit -->
+          <path d="M6,158 C50,150 120,150 164,158" stroke="var(--mint-diep)" stroke-width="12" stroke-linecap="round" fill="none"/>
+          <path d="M26,152 q-10,-9 -18,-4 q6,9 18,4Z" fill="var(--mint)" stroke="var(--mint-diep)" stroke-width="2"/>
+          <path d="M40,150 q-6,-11 -16,-9 q3,10 16,9Z" fill="var(--mint-diep)"/>
+          <path d="M146,152 q10,-9 18,-4 q-6,9 -18,4Z" fill="var(--mint)" stroke="var(--mint-diep)" stroke-width="2"/>
+
+          <!-- vleugels, achter het lijf -->
+          <path d="M32,80 C18,104 22,134 38,142 C46,120 46,96 40,80 Z" fill="#B7A2ED" stroke="var(--lavendel-diep)" stroke-width="2.5" stroke-linejoin="round"/>
+          <path class="vleugel" d="M138,80 C152,104 148,134 132,142 C124,120 124,96 130,80 Z" fill="#B7A2ED" stroke="var(--lavendel-diep)" stroke-width="2.5" stroke-linejoin="round"/>
+
+          <!-- oorpluimpjes -->
+          <path d="M52,26 q-4,-16 9,-11 q6,4 3,14Z" fill="var(--lavendel)" stroke="var(--lavendel-diep)" stroke-width="3" stroke-linejoin="round"/>
+          <path d="M118,26 q4,-16 -9,-11 q-6,4 -3,14Z" fill="var(--lavendel)" stroke="var(--lavendel-diep)" stroke-width="3" stroke-linejoin="round"/>
+
+          <!-- lijf -->
+          <path d="M85,20 C119,20 138,54 138,96 C138,132 116,156 85,156 C54,156 32,132 32,96 C32,54 51,20 85,20 Z"
+                fill="var(--lavendel)" stroke="var(--lavendel-diep)" stroke-width="3" stroke-linejoin="round"/>
+
+          <!-- buikschild met drie sterretjes -->
+          <ellipse cx="85" cy="116" rx="33" ry="31" fill="var(--lavendel-licht)"/>
+          <svg x="64.5" y="100.5" width="11" height="11" viewBox="0 0 24 24" style="color:var(--goud)"><use href="#ster"/></svg>
+          <svg x="80.5" y="116.5" width="11" height="11" viewBox="0 0 24 24" style="color:var(--goud)"><use href="#ster"/></svg>
+          <svg x="94.5" y="102.5" width="11" height="11" viewBox="0 0 24 24" style="color:var(--goud)"><use href="#ster"/></svg>
+
+          <!-- gezichtsschijven -->
+          <circle cx="64" cy="76" r="23" fill="#FFF6E8" stroke="var(--lavendel-diep)" stroke-width="2.5"/>
+          <circle cx="106" cy="76" r="23" fill="#FFF6E8" stroke="var(--lavendel-diep)" stroke-width="2.5"/>
+
+          <!-- ogen -->
+          <ellipse cx="64" cy="76" rx="10" ry="12" fill="var(--inkt-diep)"/>
+          <circle cx="60.9" cy="72.1" r="3.7" fill="#fff"/>
+          <circle cx="67.1" cy="79.7" r="1.6" fill="#fff"/>
+          <ellipse cx="106" cy="76" rx="10" ry="12" fill="var(--inkt-diep)"/>
+          <circle cx="102.9" cy="72.1" r="3.7" fill="#fff"/>
+          <circle cx="109.1" cy="79.7" r="1.6" fill="#fff"/>
+
+          <!-- oogleden: normaal opgetrokken, bij een tik knippert ze -->
+          <g class="ooglid">
+            <ellipse cx="64" cy="76" rx="12" ry="13" fill="var(--lavendel)"/>
+            <ellipse cx="106" cy="76" rx="12" ry="13" fill="var(--lavendel)"/>
+          </g>
+
+          <!-- snavel -->
+          <path d="M85,84 q7,5 0,13 q-7,-8 0,-13 Z" fill="var(--oker)"/>
+          <path d="M85,84 q5,4 1,7 q-5,-4 -1,-7 Z" fill="var(--vanille)"/>
+
+          <ellipse cx="46" cy="96" rx="8" ry="5" fill="var(--blos)" opacity=".55"/>
+          <ellipse cx="124" cy="96" rx="8" ry="5" fill="var(--blos)" opacity=".55"/>
+
+          <!-- pootjes om de tak -->
+          <g stroke="var(--oker)" stroke-width="5" stroke-linecap="round" fill="none">
+            <path d="M70,150 v8M64,152 l-5,6M76,152 l5,6"/>
+            <path d="M100,150 v8M94,152 l-5,6M106,152 l5,6"/>
+          </g>
+
+          <!-- ze houdt een sterretje vast -->
+          <circle cx="146" cy="120" r="17" fill="var(--vanille)" opacity=".3"/>
+          <svg x="137" y="111" width="18" height="18" viewBox="0 0 24 24" style="color:var(--goud)"><use href="#ster"/></svg>
+        </svg>
+      </button>
+    </span>
+  </div>
+
+  <!-- de golf onderaan het meer -->
+  <svg class="golf" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+    <path d="M0,64 C160,24 320,96 560,68 C800,40 1040,100 1440,56 L1440,120 L0,120 Z" fill="var(--hemel)" opacity=".38"/>
+    <path class="golf-voor" d="M0,80 C180,44 340,112 600,84 C860,56 1100,116 1440,74 L1440,120 L0,120 Z" fill="var(--water-diep)"/>
+  </svg>
+</section>
+
+<!-- ============================ DE SPELLETJES ============================ -->
+<section id="spelletjes" class="spelletjes">
+  <div class="container">
+    <svg class="kop-ster" viewBox="0 0 24 24" width="24" height="24" style="color:var(--goud)" aria-hidden="true" focusable="false"><use href="#ster"/></svg>
+    <h2>Mijn spelletjes</h2>
+    <p class="lead">Tik op een tegel om te beginnen.</p>
+
+    <!-- =========================================================
+         EEN NIEUWE TEGEL TOEVOEGEN
+         1. Kopieer het hele <a class="tegel"> blok hieronder.
+         2. Zet de screenshot in de map img/ (liggend, 16:10, ong. 1600x1000).
+         3. Vervang src, width, height en alt van de <img>. Schrijf de
+            alt-tekst in het Nederlands: beschrijf wat je op het plaatje ziet.
+         4. Vervang href door de link naar het nieuwe spel.
+         5. Vervang de <h3> titel, de <p> uitleg en de chips.
+         6. LET OP: de class tegel--groot is alleen voor de eerste, brede
+            tegel. Laat die weg bij gewone tegels, dan komen ze vanaf
+            620px netjes naast elkaar in twee kolommen te staan.
+         7. LET OP: de naam is altijd Arwèn, met accent grave op de e.
+         ========================================================= -->
+    <div class="raster">
+
+      <!-- TEGEL 1: het echte spel -->
+      <a class="tegel tegel--groot" href="https://tafels.arwen.im" rel="noopener">
+        <span class="raam">
+          <img src="img/axolotl-game.png" width="1600" height="1000" decoding="async"
+               alt="Schermafbeelding van het spel Tafels leren met de axolotl: een roze axolotl zwemt in een blauw meer tussen bubbels met getallen erin.">
+        </span>
+        <span class="tegel-tekst">
+          <h3>Tafels leren met de axolotl</h3>
+          <p>Zwem met de axolotl door haar meer en leer de tafels van 1 tot en met 10. Bovenin drijft een som. Zwem door de bubbel met het goede antwoord, dan knapt hij groen open! Bij elk goed antwoord komt er een vriendje bij. Je begint helemaal alleen, en aan het eind zwem je met honderd vriendjes.</p>
+          <ul class="chips">
+            <li>Tafels 1 tot en met 10</li>
+            <li>100 vriendjes verzamelen</li>
+            <li>Spelen met je vinger</li>
+          </ul>
+          <span class="pil" aria-hidden="true">
+            Spelen
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" focusable="false">
+              <path d="M5 12h14M13 6l6 6-6 6"/>
+            </svg>
+          </span>
+        </span>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================= DE VRIENDJES ============================= -->
+<section class="vriendjes-sectie">
+  <div class="container">
+    <div class="vriendjes">
+      <svg class="kop-ster" viewBox="0 0 24 24" width="24" height="24" style="color:var(--goud)" aria-hidden="true" focusable="false"><use href="#ster"/></svg>
+      <h2>Wie wonen hier?</h2>
+      <p class="lead">Op mijn website wonen twee dieren. Ik vind uilen en axolotls het allerliefst.</p>
+
+      <div class="vriendjes-rij">
+
+        <article class="vriend">
+          <span class="mascotte-plek">
+            <p class="wolkje" id="wolkje-loela-2" role="status"></p>
+            <span class="portret portret--loela">
+              <svg viewBox="0 0 120 120" aria-hidden="true" focusable="false">
+                <path d="M40,30 q-4,-16 9,-11 q6,4 3,14Z" fill="var(--lavendel)" stroke="var(--lavendel-diep)" stroke-width="3" stroke-linejoin="round"/>
+                <path d="M80,30 q4,-16 -9,-11 q-6,4 -3,14Z" fill="var(--lavendel)" stroke="var(--lavendel-diep)" stroke-width="3" stroke-linejoin="round"/>
+                <circle cx="60" cy="64" r="42" fill="var(--lavendel)" stroke="var(--lavendel-diep)" stroke-width="3"/>
+                <circle cx="42" cy="58" r="20" fill="#FFF6E8" stroke="var(--lavendel-diep)" stroke-width="2.5"/>
+                <circle cx="78" cy="58" r="20" fill="#FFF6E8" stroke="var(--lavendel-diep)" stroke-width="2.5"/>
+                <ellipse cx="42" cy="58" rx="8" ry="10" fill="var(--inkt-diep)"/>
+                <circle cx="39.5" cy="54.8" r="3" fill="#fff"/>
+                <ellipse cx="78" cy="58" rx="8" ry="10" fill="var(--inkt-diep)"/>
+                <circle cx="75.5" cy="54.8" r="3" fill="#fff"/>
+                <path d="M60,68 q6,4 0,11 q-6,-7 0,-11 Z" fill="var(--oker)"/>
+                <ellipse cx="26" cy="76" rx="8" ry="5" fill="var(--blos)" opacity=".55"/>
+                <ellipse cx="94" cy="76" rx="8" ry="5" fill="var(--blos)" opacity=".55"/>
+                <svg x="88" y="16" width="16" height="16" viewBox="0 0 24 24" style="color:var(--goud)"><use href="#ster"/></svg>
+              </svg>
+            </span>
+          </span>
+          <h3>Loela de uil</h3>
+          <p>Loela houdt van de nacht. Ze telt elke avond alle sterren. Tik op haar, dan knippert ze naar je.</p>
+          <button type="button" class="pil pil--zacht" data-mascotte="loela">Zeg hallo tegen Loela</button>
+        </article>
+
+        <article class="vriend">
+          <span class="mascotte-plek">
+            <p class="wolkje" id="wolkje-bobbel-2" role="status"></p>
+            <span class="portret portret--bobbel">
+              <svg viewBox="0 0 120 120" aria-hidden="true" focusable="false">
+                <g stroke="var(--roze-diep)" stroke-width="5" stroke-linecap="round" fill="none">
+                  <path d="M24,48 L8,36"/><path d="M22,60 L4,58"/><path d="M25,72 L9,80"/>
+                  <path d="M96,48 L112,36"/><path d="M98,60 L116,58"/><path d="M95,72 L111,80"/>
+                </g>
+                <circle cx="8" cy="36" r="7" fill="var(--roze-diep)"/>
+                <circle cx="4" cy="58" r="7" fill="var(--roze-diep)"/>
+                <circle cx="9" cy="80" r="7" fill="var(--roze-diep)"/>
+                <circle cx="112" cy="36" r="7" fill="var(--roze-diep)"/>
+                <circle cx="116" cy="58" r="7" fill="var(--roze-diep)"/>
+                <circle cx="111" cy="80" r="7" fill="var(--roze-diep)"/>
+                <ellipse cx="60" cy="62" rx="42" ry="38" fill="var(--roze)" stroke="var(--roze-diep)" stroke-width="3"/>
+                <ellipse cx="44" cy="58" rx="8" ry="10" fill="var(--inkt-diep)"/>
+                <circle cx="41.5" cy="54.8" r="3" fill="#fff"/>
+                <ellipse cx="76" cy="58" rx="8" ry="10" fill="var(--inkt-diep)"/>
+                <circle cx="73.5" cy="54.8" r="3" fill="#fff"/>
+                <path d="M53,78 q3.5,5 7,0 q3.5,5 7,0" fill="none" stroke="var(--inkt-diep)" stroke-width="3" stroke-linecap="round"/>
+                <ellipse cx="30" cy="74" rx="8" ry="5" fill="var(--blos)" opacity=".55"/>
+                <ellipse cx="90" cy="74" rx="8" ry="5" fill="var(--blos)" opacity=".55"/>
+                <circle cx="22" cy="100" r="6" fill="#fff" opacity=".6" stroke="var(--hemel)" stroke-width="1.5"/>
+                <circle cx="34" cy="110" r="4" fill="#fff" opacity=".6" stroke="var(--hemel)" stroke-width="1.5"/>
+              </svg>
+            </span>
+          </span>
+          <h3>Bobbel de axolotl</h3>
+          <p>Bobbel lacht altijd. Ze blaast de allermooiste bubbels van het meer. Kietel haar maar eens!</p>
+          <button type="button" class="pil pil--zacht" data-mascotte="bobbel">Kietel Bobbel</button>
+        </article>
+
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <svg class="golf-footer" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+    <path d="M0,64 C160,24 320,96 560,68 C800,40 1040,100 1440,56 L1440,120 L0,120 Z" fill="var(--water-diep)" opacity=".5" transform="scale(1,-1) translate(0,-120)"/>
+  </svg>
+  <div class="container footer__in">
+    <p>Deze website groeit nog. Er komt steeds iets nieuws bij.</p>
+    <svg class="hartje" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false">
+      <path d="M12,21 C-6,9 6,-2 12,7 C18,-2 30,9 12,21 Z" fill="var(--blos)"/>
+    </svg>
+    <p>Gemaakt met heel veel liefde door papa, voor Arwèn.</p>
+  </div>
+</footer>
+
+</body>
+</html>
